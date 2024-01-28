@@ -1,0 +1,13 @@
+.container {
+    background-color: #36393E;
+}
+
+h1 {
+    color: white;
+    background-color: #36393E;
+}
+
+#SauverBoutton {
+    background-color: #2E3136;
+    margin-left: 2rem;
+}

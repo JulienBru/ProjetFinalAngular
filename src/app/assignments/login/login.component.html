@@ -1,0 +1,13 @@
+<div class="LoginBackground">
+    <mat-form-field>
+        <input id="UserInput" matInput placeholder="user" [(ngModel)]="user" name="user">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input id="PasswordInput" matInput placeholder="password" [(ngModel)]="password" name="password">
+    </mat-form-field>
+
+    <button id="LoginBouton" mat-raised-button color="primary" [disabled]="((!user) || (!password))" (click)="login()">
+        LogIn
+    </button>
+</div>

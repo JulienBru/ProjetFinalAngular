@@ -1,0 +1,25 @@
+<main *ngIf="!formVisible" class="container">
+  <button id="BouttonAjout" mat-flat-button color="accent" (click)="onAddAssignmentBtnClick()" class="btnAjout">
+    Ajouter Assignment
+  </button>
+  <h3 id="TitreListeDevoirs">Liste des devoirs :</h3>
+
+  <mat-list *ngFor="let a of assignments">
+    <nav><a routerLink="/assignment/{{a.id}}">
+        <h3 mat-subheader>{{ a.dateDeRendu | date }}</h3>
+        <mat-list-item (click)="assignmentClique(a)">
+          <p *ngIf="a.rendu" appRendu>{{ a.nom }} a été RENDU. auteur : {{a.auteur}} note : {{a.note}} remarque
+            {{a.remarques}} matiere : {{a.matiere}} <img *ngIf="a.image" [src]="a.image" alt="image de l'assignment"
+              width="10px"></p>
+          <p *ngIf="!a.rendu" appNonRendu>{{ a.nom }}, N'A PAS ETE RENDU. auteur : {{a.auteur}} note : {{a.note}}
+            remarque {{a.remarques}} matiere : {{a.matiere}} <img *ngIf="a.image" [src]="a.image"
+              alt="image de l'assignment" width="10px"></p>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+      </a></nav>
+  </mat-list>
+    <button id="PrevBoutton"*ngIf="hasPrevPage" (click)="goPrevisousPage()"><mat-icon>keyboard_arrow_left</mat-icon></button>
+    <button id="NextBoutton"*ngIf="hasNextPage" (click)="goNextPage()"><mat-icon>keyboard_arrow_right</mat-icon></button>
+  <!--<app-assignment-detail [assignmentTransmis]="assignementSelectionne">
+  </app-assignment-detail>-->
+</main>

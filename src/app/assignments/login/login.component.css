@@ -1,0 +1,17 @@
+.LoginBackground {
+    background-color: #36393E;
+}
+
+#UserInput {
+    border: 1px solid black;
+}
+
+#PasswordInput {
+    border: 1px solid black;
+}
+
+#LoginBouton {
+    color: white;
+    background-color: #36393E;
+    border: 1px solid black;
+}

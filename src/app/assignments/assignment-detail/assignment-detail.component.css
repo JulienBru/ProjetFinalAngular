@@ -1,0 +1,25 @@
+mat-card-content {
+    background-color: #36393E;
+}
+
+mat-card-title {
+    color: white;
+}
+
+mat-card-subtitle {
+    color: white;
+}
+
+
+mat-checkbox {
+    margin-left: 10px;
+    color: white;
+}
+
+#BoutonEdit {
+    margin-left: 10px;
+}
+
+#BoutonDelete {
+    margin-left: 10px;
+}

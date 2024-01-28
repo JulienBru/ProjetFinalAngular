@@ -1,0 +1,27 @@
+<h1>
+    <nav><a routerLink="/home">{{title}}</a></nav>
+</h1>
+
+<div class="login-box">
+    <button mat-raised-button color="primary" (click)="openLogin()">LogIn</button>
+    <button mat-raised-button color="primary" (click)="logout()">LogOut</button>
+</div>
+
+<mat-toolbar color="lightgrey">
+    <mat-toolbar-row>
+        <button mat-button (click)="opened=!opened"><mat-icon>menu</mat-icon> </button>
+        <button mat-button><mat-icon>home</mat-icon>Home</button>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav [(opened)]="opened" mode="side">
+        <button mat-button><mat-icon>menu</mat-icon>Devoir</button>
+        <button mat-button><mat-icon>supervisor_account</mat-icon>Parametre</button>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+

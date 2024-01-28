@@ -1,0 +1,55 @@
+section {
+  display: table;
+}
+
+mat-toolbar {
+  background-color: #2E3136;
+  color: white;
+  border: 1px solid black;
+}
+
+mat-sidenav-container{
+  height: calc(205vh-115v);
+}
+
+mat-sidenav{
+  width: 200px;
+  background-color: #2E3136;
+  border: 1px solid black;
+}
+
+mat-sidenav button {
+  background-color: #2E3136;
+  color: white;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 8rem;
+}
+
+h1 a:link { 
+  text-decoration: none;
+}
+
+button {
+  color: white;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+}
+
+.login-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: #2E3136;
+  border-radius: 0 0 0 1rem;
+  border: 1px solid black;
+}
+
+.login-box button {
+  background-color: #36393E;
+}
